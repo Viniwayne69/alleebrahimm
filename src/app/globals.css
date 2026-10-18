@@ -49,7 +49,14 @@ body {
   animation: pattern-arrive 500ms cubic-bezier(.22,.61,.36,1) both;
 }
 .card {
-  --composition-scale: 1;
+  --pad-top: clamp(12px, 3.4svh, 48px);
+  --avatar-size: clamp(76px, 20svh, 200px);
+  --logo-width: clamp(104px, 24svh, 220px);
+  --block-gap: clamp(6px, 1.5svh, 16px);
+  --btn-gap: clamp(6px, 1.2svh, 10px);
+  --btn-height: clamp(44px, 7svh, 62px);
+  --btn-font: clamp(14px, 2.1svh, 17px);
+  --h1-font: clamp(16px, 2.6svh, 21px);
   position: relative;
   z-index: 1;
   isolation: isolate;
@@ -59,12 +66,12 @@ body {
   width: 100%;
   max-width: 430px;
   margin-inline: auto;
-  padding: calc(56px * var(--composition-scale)) 16px max(10px, env(safe-area-inset-bottom));
+  padding: var(--pad-top) 16px max(10px, env(safe-area-inset-bottom));
 }
 .hero-pinwheel {
   position: absolute;
   z-index: -1;
-  top: calc(36px * var(--composition-scale));
+  top: calc(var(--pad-top) - 20px);
   right: -12px;
   width: 30%;
   height: auto;
@@ -76,7 +83,7 @@ body {
 .avatar {
   position: relative;
   z-index: 1;
-  width: calc(200px * var(--composition-scale));
+  width: var(--avatar-size);
   max-width: 52vw;
   aspect-ratio: 1;
   border: 3px solid var(--mustard);
@@ -87,11 +94,11 @@ body {
 .avatar img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .logo {
   display: block;
-  width: calc(220px * var(--composition-scale));
+  width: var(--logo-width);
   max-width: 70%;
   height: auto;
   aspect-ratio: 226 / 158;
-  margin-top: calc(16px * var(--composition-scale));
+  margin-top: var(--block-gap);
 }
 
 .logo { overflow: visible; }
@@ -105,8 +112,8 @@ body {
 @keyframes tagline-reveal { from { opacity: .65; } to { opacity: 1; } }
 
 h1 {
-  margin: calc(14px * var(--composition-scale)) 0 0;
-  font-size: 21px;
+  margin: var(--block-gap) 0 0;
+  font-size: var(--h1-font);
   font-weight: 500;
   line-height: 1.25;
   text-align: center;
@@ -119,15 +126,15 @@ h1 strong { color: var(--mustard); font-weight: 700; }
 .divider {
   height: 1px;
   width: 85%;
-  margin: calc(16px * var(--composition-scale)) auto;
+  margin: var(--block-gap) auto;
   background: var(--mustard);
 }
 nav { flex: 1 1 auto; display: flex; flex-direction: column; }
 nav ul {
   list-style: none;
   display: grid;
-  grid-template-rows: repeat(4, minmax(auto, 1.35fr)) minmax(auto, 1fr);
-  gap: calc(10px * var(--composition-scale));
+  align-content: stretch;
+  gap: var(--btn-gap);
   flex: 1 1 auto;
   max-height: 420px;
   padding: 0;
@@ -135,13 +142,13 @@ nav ul {
 }
 .link-button {
   flex: 1;
-  min-height: max(44px, calc(62px * var(--composition-scale)));
+  min-height: var(--btn-height);
   display: flex;
   align-items: center;
   gap: 12px;
   border: 2px solid transparent;
   border-radius: 16px;
-  padding: 6px 14px 6px 26px;
+  padding: clamp(2px, .6svh, 6px) 14px clamp(2px, .6svh, 6px) 26px;
   color: var(--warm-white);
   text-decoration: none;
   transition: transform 180ms ease, filter 180ms ease;
@@ -149,7 +156,7 @@ nav ul {
 .button-copy {
   flex: 1;
   min-width: 0;
-  font-size: 17px;
+  font-size: var(--btn-font);
   font-weight: 400;
   line-height: 1.15;
   font-stretch: normal;
@@ -168,7 +175,7 @@ nav ul {
 .gold { color: var(--petroleum); background: linear-gradient(110deg, color-mix(in srgb, var(--mustard) 94%, white), var(--mustard)); }
 .cream { color: var(--petroleum); background: var(--warm-white); }
 .cream .date { background: var(--wine); color: var(--warm-white); }
-.outline { background: transparent; min-height: max(44px, calc(46px * var(--composition-scale))); border-color: var(--warm-white); }
+.outline { background: transparent; min-height: clamp(44px, 5.6svh, 46px); border-color: var(--warm-white); }
 .outline .button-copy { font-weight: 500; }
 .date {
   flex: 0 0 62px;
@@ -186,8 +193,6 @@ nav ul {
 .link-button:hover { transform: translateY(-1px); filter: brightness(1.05); }
 .link-button:active { transform: scale(.98); }
 .link-button:focus-visible { outline: 3px solid var(--mustard); outline-offset: 4px; }
-.seal { display: flex; justify-content: center; margin-top: calc(24px * var(--composition-scale)); }
-.seal img { display: block; width: calc(106px * var(--composition-scale)); height: auto; aspect-ratio: 1; }
 nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: calc(var(--index) * 60ms); }
 @keyframes pattern-arrive {
   from { transform: translateX(-100%); filter: blur(14px); opacity: .025; }
@@ -197,19 +202,10 @@ nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: 
 @keyframes hero-turn { from { transform: rotate(-350deg); } to { transform: rotate(10deg); } }
 @keyframes enter { from { opacity: .65; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-/* Compact proportions keep the whole card visible on medium-height screens.
-   Shorter screens retain the natural composition and scroll vertically. */
-@media (min-width: 375px) and (min-height: 800px) and (max-height: 879px) {
-  .card { --composition-scale: .83; }
-  .button-copy { font-size: 16px; }
-}
-@media (min-width: 375px) and (min-height: 880px) and (max-height: 959px) {
-  .card { --composition-scale: .88; }
-}
 @media (max-width: 374px) {
   .link-button { padding-left: 18px; gap: 8px; }
-  .button-copy { font-size: 16px; }
-  h1 { font-size: 20px; }
+  .button-copy { font-size: min(var(--btn-font), 16px); }
+  h1 { font-size: min(var(--h1-font), 20px); }
   .date { flex-basis: 54px; font-size: 16px; }
 }
 @media (max-width: 319px) {
