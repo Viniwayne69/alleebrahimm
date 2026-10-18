@@ -214,6 +214,83 @@ nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: 
   .button-copy { font-size: 14px; }
   .date { flex-basis: 44px; font-size: 14px; }
 }
+/* ---------- Desktop layout (wide screens only; mobile is untouched) ---------- */
+.desktop { display: none; }
+@media (min-width: 1024px) {
+  .card, .background-effects { display: none; }
+  .desktop {
+    --btn-gap: 22px;
+    --btn-height: 96px;
+    --btn-font: 22px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: var(--warm-white);
+  }
+  .d-hero { position: relative; overflow: hidden; background: var(--petroleum); }
+  .d-hero::before, .d-links::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/brand/pattern-branco.svg') repeat;
+    background-size: 160px 160px;
+    opacity: .07;
+    pointer-events: none;
+  }
+  .d-hero-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 40px;
+    max-width: 1100px;
+    height: 580px;
+    margin-inline: auto;
+    padding-inline: 32px;
+  }
+  .d-hero-photo { align-self: stretch; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; padding-top: 28px; }
+  .d-hero-photo img { display: block; width: min(100%, 440px); height: auto; }
+  .d-hero-text { align-self: center; display: flex; flex-direction: column; align-items: center; text-align: center; padding-bottom: 24px; }
+  .d-hero-text .logo { width: min(100%, 420px); max-width: none; margin-top: 0; }
+  .d-rule { width: 100%; height: 1px; margin: 28px 0; border: 0; background: color-mix(in srgb, var(--warm-white) 22%, transparent); }
+  .d-tagline { margin: 0; font-size: 30px; font-weight: 500; line-height: 1.25; text-transform: uppercase; letter-spacing: .02em; }
+  .d-tagline span { display: block; color: var(--mustard); }
+  .d-tagline strong { display: block; font-weight: 800; }
+
+  .d-links { position: relative; background: var(--petroleum) url('/brand/fundo-cards.webp') center top / cover no-repeat; }
+  .d-links::before { opacity: 0; }
+  .d-links::after { content: ''; position: absolute; inset: 0; background: color-mix(in srgb, var(--petroleum) 90%, black); opacity: .93; pointer-events: none; }
+  .d-links-inner { position: relative; z-index: 1; max-width: 1100px; margin-inline: auto; padding: 72px 32px 88px; }
+  .d-title { margin: 0; text-align: center; font-size: clamp(34px, 4vw, 54px); font-weight: 500; line-height: 1.1; text-transform: uppercase; color: var(--mustard); }
+  .d-title strong { font-weight: 800; color: var(--warm-white); }
+  .d-links .d-rule { margin: 36px 0 48px; }
+  .d-links nav { display: block; max-width: 900px; margin-inline: auto; }
+  .d-links nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: none;
+    max-height: none;
+    align-content: start;
+    gap: var(--btn-gap);
+  }
+  .d-links nav li:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - var(--btn-gap) / 2); }
+  .d-links .link-button { flex: 1; min-height: var(--btn-height); padding: 12px 22px 12px 32px; gap: 16px; border-radius: 18px; }
+  .d-links .outline { min-height: var(--btn-height); }
+  .d-links .button-copy { font-size: var(--btn-font); }
+  .d-links .date { flex-basis: 82px; font-size: 26px; padding: 5px 8px; }
+  .d-links .chevron { flex-basis: 14px; width: 14px; height: 26px; }
+
+  .d-footer { position: relative; background: var(--mustard) url('/brand/fundo-rodape.webp') center 35% / cover no-repeat; color: var(--petroleum); }
+  .d-footer::before { content: ''; position: absolute; inset: 0; background: var(--mustard); opacity: .86; pointer-events: none; }
+  .d-footer-inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 36px; padding: 88px 32px 96px; }
+  .d-footer .d-title { color: var(--petroleum); }
+  .d-footer .d-title strong { color: var(--petroleum); font-weight: 800; }
+  .d-socials { display: flex; gap: 14px; }
+  .d-social { display: grid; place-items: center; width: 72px; height: 72px; border-radius: 12px; background: var(--petroleum); color: var(--mustard); transition: transform 180ms ease, filter 180ms ease; }
+  .d-social:hover { transform: translateY(-2px); filter: brightness(1.15); }
+  .d-social:focus-visible { outline: 3px solid var(--petroleum); outline-offset: 4px; }
+  .d-social svg { width: 38px; height: 38px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .pattern, nav li, .hero-pinwheel, .logo-pinwheel, .logo-name, .logo-surname, .logo-tagline, .slogan-line { animation: none; }
   .link-button { transition: none; }
