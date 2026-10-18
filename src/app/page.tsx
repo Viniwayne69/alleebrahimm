@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Avatar } from '@/components/Avatar';
 import { Logo } from '@/components/Logo';
-import { Seal } from '@/components/Seal';
 import { Pattern } from '@/components/Pattern';
 import { LinkButton } from '@/components/LinkButton';
 import { links } from '@/data/links';
@@ -13,7 +12,6 @@ export default function Home() {
     </header>
     <div className="divider" aria-hidden="true" />
     <nav aria-label="Treinamentos e contato"><ul>{links.map((link, index) => <LinkButton key={link.id} link={link} index={index} />)}</ul></nav>
-    <Seal />
   </main></>;
 }
 
