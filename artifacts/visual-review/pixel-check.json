@@ -1,0 +1,18 @@
+{
+  "after-393x852.png": {
+    "size": [
+      393,
+      852
+    ],
+    "most_common_color": "#002D3C",
+    "background_pixels": 129537
+  },
+  "after-1440x900.png": {
+    "size": [
+      1440,
+      900
+    ],
+    "most_common_color": "#002D3C",
+    "background_pixels": 690891
+  }
+}

@@ -1,0 +1,902 @@
+[
+  {
+    "width": 360,
+    "height": 740,
+    "scrollWidth": 360,
+    "scrollHeight": 984,
+    "background": "rgb(0, 45, 60)",
+    "divider": "rgb(223, 146, 38)",
+    "logo": {
+      "x": 70,
+      "y": 259.1875,
+      "width": 220,
+      "height": 153.796875,
+      "top": 259.1875,
+      "right": 290,
+      "bottom": 412.984375,
+      "left": 70
+    },
+    "avatar": {
+      "x": 86.40625,
+      "y": 56,
+      "width": 187.1875,
+      "height": 187.1875,
+      "top": 56,
+      "right": 273.59375,
+      "bottom": 243.1875,
+      "left": 86.40625
+    },
+    "card": {
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 983.984375,
+      "top": 0,
+      "right": 360,
+      "bottom": 983.984375,
+      "left": 0
+    },
+    "seal": {
+      "x": 127,
+      "y": 867.984375,
+      "width": 106,
+      "height": 106,
+      "top": 867.984375,
+      "right": 233,
+      "bottom": 973.984375,
+      "left": 127
+    },
+    "buttonHeights": [
+      62,
+      62,
+      62,
+      62,
+      46
+    ],
+    "fonts": [
+      {
+        "family": "Fira Sans",
+        "weight": "400",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "500",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "700",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "800",
+        "stretch": "normal"
+      }
+    ],
+    "buttonFour": {
+      "background": "rgb(255, 248, 238)",
+      "color": "rgb(0, 45, 60)",
+      "weight": "800",
+      "pillBackground": "rgb(131, 20, 23)",
+      "pillColor": "rgb(255, 248, 238)",
+      "arrow": "rgb(0, 45, 60)"
+    },
+    "buttonFive": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 248, 238)"
+    },
+    "imagesLoaded": true,
+    "links": [
+      {
+        "text": "Quero participar daVIRADA DE VENDAS04/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero treinamento sópara a minha empresa",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara VENDEDORES11/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara GARÇONS16/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero tirar dúvidas",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "focus": {
+      "focused": true,
+      "style": "solid",
+      "width": "3px"
+    },
+    "renderedFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Fira Sans Medium",
+            "postScriptName": "FiraSans-Medium",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Regular",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy strong",
+        "fonts": [
+          {
+            "familyName": "Fira Sans ExtraBold",
+            "postScriptName": "FiraSans-ExtraBold",
+            "isCustomFont": true,
+            "glyphCount": 16
+          }
+        ]
+      },
+      {
+        "selector": ".date",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 393,
+    "height": 852,
+    "scrollWidth": 393,
+    "scrollHeight": 852,
+    "background": "rgb(0, 45, 60)",
+    "divider": "rgb(223, 146, 38)",
+    "logo": {
+      "x": 105.203125,
+      "y": 225.734375,
+      "width": 182.59375,
+      "height": 127.640625,
+      "top": 225.734375,
+      "right": 287.796875,
+      "bottom": 353.375,
+      "left": 105.203125
+    },
+    "avatar": {
+      "x": 113.5,
+      "y": 46.46875,
+      "width": 166,
+      "height": 166,
+      "top": 46.46875,
+      "right": 279.5,
+      "bottom": 212.46875,
+      "left": 113.5
+    },
+    "card": {
+      "x": 0,
+      "y": 0,
+      "width": 393,
+      "height": 851.203125,
+      "top": 0,
+      "right": 393,
+      "bottom": 851.203125,
+      "left": 0
+    },
+    "seal": {
+      "x": 152.515625,
+      "y": 753.234375,
+      "width": 87.96875,
+      "height": 87.96875,
+      "top": 753.234375,
+      "right": 240.484375,
+      "bottom": 841.203125,
+      "left": 152.515625
+    },
+    "buttonHeights": [
+      52.78125,
+      52.78125,
+      52.78125,
+      52.78125,
+      44
+    ],
+    "fonts": [
+      {
+        "family": "Fira Sans",
+        "weight": "400",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "500",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "700",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "800",
+        "stretch": "normal"
+      }
+    ],
+    "buttonFour": {
+      "background": "rgb(255, 248, 238)",
+      "color": "rgb(0, 45, 60)",
+      "weight": "800",
+      "pillBackground": "rgb(131, 20, 23)",
+      "pillColor": "rgb(255, 248, 238)",
+      "arrow": "rgb(0, 45, 60)"
+    },
+    "buttonFive": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 248, 238)"
+    },
+    "imagesLoaded": true,
+    "links": [
+      {
+        "text": "Quero participar daVIRADA DE VENDAS04/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero treinamento sópara a minha empresa",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara VENDEDORES11/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara GARÇONS16/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero tirar dúvidas",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "focus": {
+      "focused": true,
+      "style": "solid",
+      "width": "3px"
+    },
+    "renderedFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Fira Sans Medium",
+            "postScriptName": "FiraSans-Medium",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Regular",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy strong",
+        "fonts": [
+          {
+            "familyName": "Fira Sans ExtraBold",
+            "postScriptName": "FiraSans-ExtraBold",
+            "isCustomFont": true,
+            "glyphCount": 16
+          }
+        ]
+      },
+      {
+        "selector": ".date",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "background": "rgb(0, 45, 60)",
+    "divider": "rgb(223, 146, 38)",
+    "logo": {
+      "x": 118.203125,
+      "y": 239.34375,
+      "width": 193.59375,
+      "height": 135.34375,
+      "top": 239.34375,
+      "right": 311.796875,
+      "bottom": 374.6875,
+      "left": 118.203125
+    },
+    "avatar": {
+      "x": 127,
+      "y": 49.265625,
+      "width": 176,
+      "height": 176,
+      "top": 49.265625,
+      "right": 303,
+      "bottom": 225.265625,
+      "left": 127
+    },
+    "card": {
+      "x": 0,
+      "y": 0,
+      "width": 430,
+      "height": 892.59375,
+      "top": 0,
+      "right": 430,
+      "bottom": 892.59375,
+      "left": 0
+    },
+    "seal": {
+      "x": 168.359375,
+      "y": 789.328125,
+      "width": 93.265625,
+      "height": 93.265625,
+      "top": 789.328125,
+      "right": 261.625,
+      "bottom": 882.59375,
+      "left": 168.359375
+    },
+    "buttonHeights": [
+      55.09375,
+      55.09375,
+      55.09375,
+      55.09375,
+      44
+    ],
+    "fonts": [
+      {
+        "family": "Fira Sans",
+        "weight": "400",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "500",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "700",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "800",
+        "stretch": "normal"
+      }
+    ],
+    "buttonFour": {
+      "background": "rgb(255, 248, 238)",
+      "color": "rgb(0, 45, 60)",
+      "weight": "800",
+      "pillBackground": "rgb(131, 20, 23)",
+      "pillColor": "rgb(255, 248, 238)",
+      "arrow": "rgb(0, 45, 60)"
+    },
+    "buttonFive": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 248, 238)"
+    },
+    "imagesLoaded": true,
+    "links": [
+      {
+        "text": "Quero participar daVIRADA DE VENDAS04/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero treinamento sópara a minha empresa",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara VENDEDORES11/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara GARÇONS16/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero tirar dúvidas",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "focus": {
+      "focused": true,
+      "style": "solid",
+      "width": "3px"
+    },
+    "renderedFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Fira Sans Medium",
+            "postScriptName": "FiraSans-Medium",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Regular",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy strong",
+        "fonts": [
+          {
+            "familyName": "Fira Sans ExtraBold",
+            "postScriptName": "FiraSans-ExtraBold",
+            "isCustomFont": true,
+            "glyphCount": 16
+          }
+        ]
+      },
+      {
+        "selector": ".date",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "scrollWidth": 768,
+    "scrollHeight": 1024,
+    "background": "rgb(0, 45, 60)",
+    "divider": "rgb(223, 146, 38)",
+    "logo": {
+      "x": 274,
+      "y": 272,
+      "width": 220,
+      "height": 153.796875,
+      "top": 272,
+      "right": 494,
+      "bottom": 425.796875,
+      "left": 274
+    },
+    "avatar": {
+      "x": 284,
+      "y": 56,
+      "width": 200,
+      "height": 200,
+      "top": 56,
+      "right": 484,
+      "bottom": 256,
+      "left": 284
+    },
+    "card": {
+      "x": 169,
+      "y": 0,
+      "width": 430,
+      "height": 999.296875,
+      "top": 0,
+      "right": 599,
+      "bottom": 999.296875,
+      "left": 169
+    },
+    "seal": {
+      "x": 331,
+      "y": 883.296875,
+      "width": 106,
+      "height": 106,
+      "top": 883.296875,
+      "right": 437,
+      "bottom": 989.296875,
+      "left": 331
+    },
+    "buttonHeights": [
+      62,
+      62,
+      62,
+      62,
+      46
+    ],
+    "fonts": [
+      {
+        "family": "Fira Sans",
+        "weight": "400",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "500",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "700",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "800",
+        "stretch": "normal"
+      }
+    ],
+    "buttonFour": {
+      "background": "rgb(255, 248, 238)",
+      "color": "rgb(0, 45, 60)",
+      "weight": "800",
+      "pillBackground": "rgb(131, 20, 23)",
+      "pillColor": "rgb(255, 248, 238)",
+      "arrow": "rgb(0, 45, 60)"
+    },
+    "buttonFive": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 248, 238)"
+    },
+    "imagesLoaded": true,
+    "links": [
+      {
+        "text": "Quero participar daVIRADA DE VENDAS04/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero treinamento sópara a minha empresa",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara VENDEDORES11/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara GARÇONS16/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero tirar dúvidas",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "focus": {
+      "focused": true,
+      "style": "solid",
+      "width": "3px"
+    },
+    "renderedFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Fira Sans Medium",
+            "postScriptName": "FiraSans-Medium",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Regular",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy strong",
+        "fonts": [
+          {
+            "familyName": "Fira Sans ExtraBold",
+            "postScriptName": "FiraSans-ExtraBold",
+            "isCustomFont": true,
+            "glyphCount": 16
+          }
+        ]
+      },
+      {
+        "selector": ".date",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "scrollHeight": 900,
+    "background": "rgb(0, 45, 60)",
+    "divider": "rgb(223, 146, 38)",
+    "logo": {
+      "x": 623.203125,
+      "y": 239.34375,
+      "width": 193.59375,
+      "height": 135.34375,
+      "top": 239.34375,
+      "right": 816.796875,
+      "bottom": 374.6875,
+      "left": 623.203125
+    },
+    "avatar": {
+      "x": 632,
+      "y": 49.265625,
+      "width": 176,
+      "height": 176,
+      "top": 49.265625,
+      "right": 808,
+      "bottom": 225.265625,
+      "left": 632
+    },
+    "card": {
+      "x": 505,
+      "y": 0,
+      "width": 430,
+      "height": 892.59375,
+      "top": 0,
+      "right": 935,
+      "bottom": 892.59375,
+      "left": 505
+    },
+    "seal": {
+      "x": 673.359375,
+      "y": 789.328125,
+      "width": 93.265625,
+      "height": 93.265625,
+      "top": 789.328125,
+      "right": 766.625,
+      "bottom": 882.59375,
+      "left": 673.359375
+    },
+    "buttonHeights": [
+      55.09375,
+      55.09375,
+      55.09375,
+      55.09375,
+      44
+    ],
+    "fonts": [
+      {
+        "family": "Fira Sans",
+        "weight": "400",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "500",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "700",
+        "stretch": "normal"
+      },
+      {
+        "family": "Fira Sans",
+        "weight": "800",
+        "stretch": "normal"
+      }
+    ],
+    "buttonFour": {
+      "background": "rgb(255, 248, 238)",
+      "color": "rgb(0, 45, 60)",
+      "weight": "800",
+      "pillBackground": "rgb(131, 20, 23)",
+      "pillColor": "rgb(255, 248, 238)",
+      "arrow": "rgb(0, 45, 60)"
+    },
+    "buttonFive": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgb(255, 248, 238)"
+    },
+    "imagesLoaded": true,
+    "links": [
+      {
+        "text": "Quero participar daVIRADA DE VENDAS04/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero treinamento sópara a minha empresa",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara VENDEDORES11/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Próximo treinamentopara GARÇONS16/11",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "Quero tirar dúvidas",
+        "href": "#",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "focus": {
+      "focused": true,
+      "style": "solid",
+      "width": "3px"
+    },
+    "renderedFonts": [
+      {
+        "selector": "h1",
+        "fonts": [
+          {
+            "familyName": "Fira Sans Medium",
+            "postScriptName": "FiraSans-Medium",
+            "isCustomFont": true,
+            "glyphCount": 34
+          },
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Regular",
+            "isCustomFont": true,
+            "glyphCount": 19
+          }
+        ]
+      },
+      {
+        "selector": ".button-copy strong",
+        "fonts": [
+          {
+            "familyName": "Fira Sans ExtraBold",
+            "postScriptName": "FiraSans-ExtraBold",
+            "isCustomFont": true,
+            "glyphCount": 16
+          }
+        ]
+      },
+      {
+        "selector": ".date",
+        "fonts": [
+          {
+            "familyName": "Fira Sans",
+            "postScriptName": "FiraSans-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      }
+    ],
+    "errors": []
+  }
+]
