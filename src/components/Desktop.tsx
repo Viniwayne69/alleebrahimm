@@ -16,7 +16,6 @@ export function Desktop() {
     <noscript><style>{NO_JS_CSS}</style></noscript>
     <DesktopEffects />
     <section className="d-hero">
-      <div className="d-glow" aria-hidden="true" />
       <div className="d-hero-inner">
         <div className="d-hero-photo">
           <Image src="/brand/alle-recortada-2.webp" alt="Allê Ebrahim sorrindo, de braços cruzados, com óculos e roupa vermelha" width={1122} height={1402} priority unoptimized />

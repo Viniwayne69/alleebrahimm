@@ -9,7 +9,7 @@ const BG_RATIO = 945 / 1418;
 const BG_SCALE = 1.18;
 const WATERMARK_SHARE = 0.13;
 
-/** Desktop-only behaviour: scroll reveal, parallax and the mouse glow. Renders nothing. */
+/** Desktop-only behaviour: scroll reveal and parallax. Renders nothing. */
 export function DesktopEffects() {
   useEffect(() => {
     const root = document.querySelector<HTMLElement>('.desktop');
@@ -56,21 +56,11 @@ export function DesktopEffects() {
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
 
-    const hero = root.querySelector<HTMLElement>('.d-hero');
-    const onMove = (event: MouseEvent) => {
-      if (!hero) return;
-      const rect = hero.getBoundingClientRect();
-      hero.style.setProperty('--mx', `${event.clientX - rect.left}px`);
-      hero.style.setProperty('--my', `${event.clientY - rect.top}px`);
-    };
-    hero?.addEventListener('mousemove', onMove);
-
     return () => {
       io.disconnect();
       if (frame) cancelAnimationFrame(frame);
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
-      hero?.removeEventListener('mousemove', onMove);
     };
   }, []);
 
