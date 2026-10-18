@@ -23,7 +23,7 @@ export function Desktop() {
 
     <section className="d-links">
       <div className="d-links-inner">
-        <h2 className="d-title">Escolha seu <strong>próximo passo</strong></h2>
+        <h2 className="d-title">Eu vou te ajudar a <strong>vender mais</strong></h2>
         <hr className="d-rule" />
         <nav aria-label="Treinamentos e contato"><ul>{links.map((link, index) => <LinkButton key={link.id} link={link} index={index} />)}</ul></nav>
       </div>
