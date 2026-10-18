@@ -257,7 +257,7 @@ nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: 
   .d-tagline span { display: block; color: var(--mustard); }
   .d-tagline strong { display: block; font-weight: 800; }
 
-  .d-links { position: relative; background: var(--petroleum) url('/brand/fundo-cards.webp') center top / cover no-repeat; }
+  .d-links { position: relative; background: var(--petroleum) url('/brand/fundo-cards.webp') center top / 118% auto no-repeat; }
   .d-links::before { opacity: 0; }
   .d-links::after { content: ''; position: absolute; inset: 0; background: color-mix(in srgb, var(--petroleum) 90%, black); opacity: .93; pointer-events: none; }
   .d-links-inner { position: relative; z-index: 1; max-width: 1100px; margin-inline: auto; padding: 72px 32px 88px; }
@@ -280,7 +280,7 @@ nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: 
   .d-links .date { flex-basis: 82px; font-size: 26px; padding: 5px 8px; }
   .d-links .chevron { flex-basis: 14px; width: 14px; height: 26px; }
 
-  .d-footer { position: relative; background: var(--mustard) url('/brand/fundo-rodape.webp') center 35% / cover no-repeat; color: var(--petroleum); }
+  .d-footer { position: relative; background: var(--mustard) url('/brand/fundo-rodape.webp') center 35% / 118% auto no-repeat; color: var(--petroleum); }
   .d-footer::before { content: ''; position: absolute; inset: 0; background: var(--mustard); opacity: .86; pointer-events: none; }
   .d-footer-inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 36px; padding: 88px 32px 96px; }
   .d-footer .d-title { color: var(--petroleum); }
@@ -290,6 +290,75 @@ nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: 
   .d-social:hover { transform: translateY(-2px); filter: brightness(1.15); }
   .d-social:focus-visible { outline: 3px solid var(--petroleum); outline-offset: 4px; }
   .d-social svg { width: 38px; height: 38px; }
+}
+/* ---------- Desktop immersion: animations, parallax, depth (wide screens only) ---------- */
+@keyframes d-rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes d-open { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes d-spin { to { transform: rotate(360deg); } }
+@keyframes d-pop { from { opacity: 0; transform: scale(.5); } 60% { opacity: 1; transform: scale(1.14); } to { opacity: 1; transform: scale(1); } }
+@media (min-width: 1024px) {
+  /* Hero: photo, logo, line and tagline arrive in sequence. */
+  .d-hero-photo { animation: d-rise 950ms cubic-bezier(.22,.61,.36,1) both; }
+  .d-hero-text { animation: d-rise 850ms cubic-bezier(.22,.61,.36,1) 250ms both; }
+  .d-hero .d-rule { transform-origin: center; animation: d-open 900ms cubic-bezier(.22,.61,.36,1) 700ms both; }
+  .d-tagline { animation: d-rise 800ms cubic-bezier(.22,.61,.36,1) 850ms both; }
+  .d-hero-photo img { will-change: transform; }
+
+  /* Hero: slow spinning pinwheel and a glow that follows the mouse. */
+  .d-hero::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    width: 640px;
+    height: 640px;
+    margin-top: -320px;
+    background: url('/brand/catavento-mostarda.svg') center / contain no-repeat;
+    opacity: .07;
+    pointer-events: none;
+    animation: d-spin 90s linear infinite;
+  }
+  .d-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(520px circle at var(--mx, 72%) var(--my, 40%), rgb(223 146 38 / .17), transparent 62%);
+  }
+
+  /* Soft diagonal edges between the sections. */
+  .d-links { margin-top: -48px; clip-path: polygon(0 48px, 100% 0, 100% 100%, 0 100%); }
+  .d-links-inner { padding: 120px 32px 128px; }
+  .d-footer { margin-top: -40px; clip-path: polygon(0 0, 100% 40px, 100% 100%, 0 100%); }
+  .d-footer-inner { padding: 128px 32px 96px; }
+
+  /* Scroll reveal (the .in class is added by DesktopEffects). */
+  .desktop [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity 700ms ease, transform 800ms cubic-bezier(.22,.61,.36,1); }
+  .desktop [data-reveal].in { opacity: 1; transform: none; }
+  .desktop .d-rule[data-reveal] { opacity: 1; transform: scaleX(0); transition: transform 900ms cubic-bezier(.22,.61,.36,1); }
+  .desktop .d-rule[data-reveal].in { transform: scaleX(1); }
+  .desktop .d-links nav[data-reveal], .desktop .d-socials[data-reveal] { opacity: 1; transform: none; transition: none; }
+
+  /* Cards rise one after the other, and each date pops in. */
+  .d-links nav li { opacity: 0; transform: translateY(44px); animation: none; transition: opacity 700ms ease, transform 850ms cubic-bezier(.22,.61,.36,1); transition-delay: calc(var(--index) * 110ms); }
+  .d-links nav.in li { opacity: 1; transform: none; }
+  .d-links nav.in .date { animation: d-pop 650ms cubic-bezier(.34,1.56,.64,1) both; animation-delay: calc(var(--index) * 110ms + 500ms); }
+
+  /* Richer card hover. */
+  .d-links .link-button { transition: transform 260ms ease, box-shadow 260ms ease, filter 260ms ease; }
+  .d-links .link-button:hover { transform: translateY(-5px); filter: brightness(1.08); box-shadow: 0 18px 32px rgb(0 0 0 / .4); }
+  .d-links .link-button:active { transform: translateY(-2px) scale(.99); }
+  .d-links .chevron { transition: transform 260ms ease; }
+  .d-links .link-button:hover .chevron { transform: translateX(7px); }
+
+  /* Footer icons pop in. */
+  .d-socials .d-social { opacity: 0; transform: scale(.4) translateY(12px); }
+  .d-socials.in .d-social { opacity: 1; transform: none; transition: opacity 500ms ease, transform 700ms cubic-bezier(.34,1.56,.64,1), filter 180ms ease; transition-delay: calc(var(--i) * 140ms); }
+  .d-socials.in .d-social:hover { transform: translateY(-4px) scale(1.07); transition-delay: 0s; transition-duration: 180ms; }
+}
+@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .desktop *, .desktop *::before, .desktop *::after { animation: none !important; transition: none !important; }
+  .desktop [data-reveal], .d-links nav li, .d-socials .d-social { opacity: 1; transform: none; }
+  .desktop .d-rule[data-reveal] { transform: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .pattern, nav li, .hero-pinwheel, .logo-pinwheel, .logo-name, .logo-surname, .logo-tagline, .slogan-line { animation: none; }
