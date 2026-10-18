@@ -11,7 +11,7 @@ export function Desktop() {
     <section className="d-hero">
       <div className="d-hero-inner">
         <div className="d-hero-photo">
-          <Image src="/brand/alle-recortada.webp" alt="Allê Ebrahim sorrindo, de braços cruzados, com óculos e roupa vermelha" width={1024} height={1536} priority sizes="460px" />
+          <Image src="/brand/alle-recortada-2.webp" alt="Allê Ebrahim sorrindo, de braços cruzados, com óculos e roupa vermelha" width={1122} height={1402} priority unoptimized />
         </div>
         <div className="d-hero-text">
           <Logo />
