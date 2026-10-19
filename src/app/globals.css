@@ -177,6 +177,10 @@ nav ul {
 .cream .date { background: var(--wine); color: var(--warm-white); }
 .outline { background: transparent; min-height: clamp(44px, 5.6svh, 46px); border-color: var(--warm-white); }
 .outline .button-copy { font-weight: 500; }
+/* Botões secundários com as cores da marca (mesmo tamanho do .outline): azul-petróleo fechado e bordô escuro, com borda e texto mostarda. */
+.outline.tone-deep { background: linear-gradient(110deg, #001a22, #00252f); border-color: var(--mustard); color: var(--mustard); }
+.outline.tone-wine { background: linear-gradient(110deg, color-mix(in srgb, var(--wine) 68%, black), color-mix(in srgb, var(--wine) 56%, black)); border-color: var(--mustard); color: var(--mustard); }
+.outline.tone-deep .button-copy, .outline.tone-wine .button-copy { font-weight: 600; }
 .date {
   flex: 0 0 62px;
   padding: 3px 5px;
