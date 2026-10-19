@@ -168,12 +168,13 @@ nav ul {
   background: linear-gradient(110deg, var(--wine), color-mix(in srgb, var(--wine) 85%, black));
 }
 .orange {
-  border-color: var(--orange);
+  border-color: var(--mustard);
   background: linear-gradient(110deg, color-mix(in srgb, var(--orange) 82%, black), color-mix(in srgb, var(--orange) 86%, black));
 }
 .orange .button-copy { font-weight: 500; }
-.gold { color: var(--petroleum); background: linear-gradient(110deg, color-mix(in srgb, var(--mustard) 94%, white), var(--mustard)); }
-.cream { color: var(--petroleum); background: var(--warm-white); }
+/* Todos os cards têm moldura: mostarda nos escuros e no creme; no card mostarda, um dourado mais claro para a moldura aparecer. */
+.gold { color: var(--petroleum); border-color: color-mix(in srgb, var(--mustard) 45%, white); background: linear-gradient(110deg, color-mix(in srgb, var(--mustard) 94%, white), var(--mustard)); }
+.cream { color: var(--petroleum); border-color: var(--mustard); background: var(--warm-white); }
 .cream .date { background: var(--wine); color: var(--warm-white); }
 .outline { background: transparent; min-height: clamp(44px, 5.6svh, 46px); border-color: var(--warm-white); }
 .outline .button-copy { font-weight: 500; }
