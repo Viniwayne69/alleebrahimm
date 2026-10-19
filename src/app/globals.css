@@ -194,6 +194,8 @@ nav ul {
 .link-button:active { transform: scale(.98); }
 .link-button:focus-visible { outline: 3px solid var(--mustard); outline-offset: 4px; }
 nav li { display: flex; animation: enter 400ms ease backwards; animation-delay: calc(var(--index) * 60ms); }
+/* Botões só do PC ficam de fora da versão de celular (a lista volta a ter só os 5 botões). */
+.card .only-desktop { display: none; }
 @keyframes pattern-arrive {
   from { transform: translateX(-100%); filter: blur(14px); opacity: .025; }
   55% { filter: blur(6px); opacity: .055; }

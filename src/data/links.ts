@@ -6,6 +6,8 @@ export type CardLink = {
   data?: string;
   variante: 'wine' | 'orange' | 'gold' | 'cream' | 'outline';
   href: string;
+  /** Aparece só na versão de PC; no celular o botão fica de fora por enquanto. */
+  somenteDesktop?: boolean;
 };
 
 export const SITE_URL = 'https://allebrahimsite.vercel.app/';
@@ -16,6 +18,6 @@ export const links: CardLink[] = [
   { id: 'vendedores', textoLinha1: 'Próximo treinamento', textoLinha2: 'para ', destaque: 'VENDEDORES', data: '11/11', variante: 'gold', href: '#' }, // TODO: colar URL real
   { id: 'garcons', textoLinha1: 'Próximo treinamento', textoLinha2: 'para ', destaque: 'GARÇONS', data: '16/11', variante: 'cream', href: '#' }, // TODO: colar URL real
   { id: 'duvidas', textoLinha1: 'Quero tirar dúvidas', variante: 'outline', href: 'https://wa.me/558199369935?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas.' },
-  { id: 'site', textoLinha1: 'Conheça o site da Allê', variante: 'outline', href: SITE_URL },
+  { id: 'site', textoLinha1: 'Conheça o site da Allê', variante: 'outline', href: SITE_URL, somenteDesktop: true },
 ];
 

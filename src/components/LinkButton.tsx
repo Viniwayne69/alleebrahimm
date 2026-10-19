@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 import type { CardLink } from '@/data/links';
 export function LinkButton({ link, index }: { link: CardLink; index: number }) {
-  return <li style={{ '--index': index } as CSSProperties}>
+  return <li className={link.somenteDesktop ? 'only-desktop' : undefined} style={{ '--index': index } as CSSProperties}>
     <a className={`link-button ${link.variante}`} href={link.href} target="_blank" rel="noopener noreferrer">
       <span className="button-copy"><span>{link.textoLinha1}</span>{(link.textoLinha2 || link.destaque) && <span>{link.textoLinha2}<strong>{link.destaque}</strong></span>}</span>
       {link.data && <span className="date">{link.data}</span>}
